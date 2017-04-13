@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:layout_margin="15dp"
     android:background="#8000"
     android:orientation="vertical">
@@ -13,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
-        android:text="空气质量"
+        android:text="风向风力"
         android:textColor="#fff"
         android:textSize="20sp"/>
 
@@ -26,46 +25,36 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical"
             android:layout_weight="1">
-            <TextView
-                android:id="@+id/aqi_text"
-                android:textColor="#fff"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="污染指数"
-                android:textColor="#fff"/>
-
-            <com.github.lzyzsd.circleprogress.ArcProgress
-                android:id="@+id/arc_progress"
-                android:layout_marginLeft="15dp"
-                android:background="#00000000"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                custom:arc_finished_color="@color/greenyellow"
-                custom:arc_unfinished_color="@color/white"
-                custom:arc_progress="100"
-                custom:arc_text_size="40sp"
-                custom:arc_max="300"
-                custom:arc_suffix_text_size="0sp"
-                custom:arc_bottom_text="0       500"
-                custom:arc_bottom_text_size="14sp"
-                />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_weight="1">
-            <include layout="@layout/aqi_txt"></include>
 
+            <TextView
+                android:id="@+id/dir_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/sc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/spd_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"/>
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

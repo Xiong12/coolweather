@@ -38,9 +38,15 @@
 
                     <include layout="@layout/now" />
 
+                    <include layout="@layout/hourlyforecast" />
+
                     <include layout="@layout/forecast" />
 
                     <include layout="@layout/aqi" />
+
+                    <include layout="@layout/wind" />
+
+                    <include layout="@layout/alarm" />
 
                     <include layout="@layout/suggestion" />
 

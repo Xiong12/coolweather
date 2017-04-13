@@ -11,7 +11,8 @@ public class Basic {
     public String weatherId;
 
     public Update update;
-
+    public String lat;
+    public String lon;
     public class Update {
 
         @SerializedName("loc")

@@ -9,6 +9,12 @@ public class AQI {
         public String aqi;
 
         public String pm25;
+        public String co;
+        public String no2;
+        public String so2;
+        public String o3;
+        public String pm10;
+        public String qlty;
 
     }
 
